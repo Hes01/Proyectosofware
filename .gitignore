@@ -1,0 +1,3 @@
+# Ignorar archivos y carpetas generados por Visual Studio
+.vs/
+SistemaVentasNortFarma/obj/
