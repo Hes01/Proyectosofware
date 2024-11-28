@@ -51,6 +51,8 @@ C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPre
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\roslyn\VBCSCompiler.exe
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\Antlr3.Runtime.dll
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\CapaEntidad.dll
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\CapaNegocio.dll
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\Newtonsoft.Json.dll
@@ -62,6 +64,9 @@ C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPre
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\System.Web.WebPages.dll
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\System.Web.WebPages.Razor.dll
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\WebGrease.dll
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\CapaDatos.dll
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\CapaEntidad.pdb
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\CapaNegocio.pdb
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\System.Web.Helpers.xml
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\System.Web.Mvc.xml
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\System.Web.Optimization.xml
@@ -72,6 +77,7 @@ C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPre
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\Newtonsoft.Json.xml
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\Antlr3.Runtime.pdb
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\CapaDatos.pdb
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\es\System.Web.Helpers.resources.dll
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\es\System.Web.Mvc.resources.dll
 C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaPresentacionAdmin\bin\es\System.Web.Optimization.resources.dll
