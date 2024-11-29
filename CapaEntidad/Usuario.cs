@@ -13,5 +13,6 @@ namespace CapaEntidad
         public string contrasena { get; set; }
         public bool estado { get; set; }
         public Persona oPersona { get; set; }
+        public Rol oRol { get; set; }
     }
 }

@@ -12,9 +12,9 @@ namespace CapaNegocio
     {
         private CD_Usuarios objCapaDato = new CD_Usuarios();
 
-        public List<Usuario> Listar(bool estado )
+        public List<Usuario> Listar()
         {
-            return objCapaDato.ListarPorEstado(estado);
+            return objCapaDato.Listar();
         }
 
     }

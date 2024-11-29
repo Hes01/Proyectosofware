@@ -21,10 +21,11 @@ namespace CapaPresentacionAdmin.Controllers
             return View();
         }
 
-        public JsonResult ListarUsuarios(bool estado = true)
+        [HttpGet]//SIN CAMBIOS DEVUELVE INFO 
+        public JsonResult ListarUsuarios()
         {
-            List<Usuario> oLista = new CN_Usuarios().Listar(estado); // Pasar el estado al método correcto
-            return Json(oLista, JsonRequestBehavior.AllowGet);
+            List<Usuario> oLista = new CN_Usuarios().Listar(); // Pasar el estado al método correcto
+            return Json(new {data = oLista}, JsonRequestBehavior.AllowGet);
         }
 
     }

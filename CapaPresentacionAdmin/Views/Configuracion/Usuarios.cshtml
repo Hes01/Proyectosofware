@@ -4,5 +4,196 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Usuarios</h2>
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item"><a href="index.html">Resumen</a></li>
+    <li class="breadcrumb-item active">Usuarios</li>
+</ol>
 
+<div class="card">
+    <div class="card-header">
+        Featured
+    </div>
+    <div class="card-body">
+
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary" onclick="abrirModal()">Crear Nuevo</button>
+            </div>
+
+            <hr class="mt-3" />
+
+            <table id="tablaUsuarios" class="display cell-border dt-responsive" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        @*<th scope="col">#</th>*@
+                        <th scope="col">idUsuario</th>
+                        <th scope="col">nombreUsuario</th>
+
+                        <th scope="col">Nombres Completos</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Rol</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Acciones</th>
+                        @*<th scope="col">Correo</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Acciones</th>*@
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        @*<th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto.gmail.com</td>
+                            <td>Activo</td>
+                            <td>
+                                <button type="button" class="btn btn-warning">Ver</button>
+                                <button type="button" class="btn btn-success">Editar</button>
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                            </td>*@
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="FormModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white" >
+                <h5 class="modal-title" id="exampleModalLabel">Crear Usuario</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body g-2">
+                <div class="row" >
+                            <!-- Campo para ingresar el nombre de usuario -->
+                            <div class="col-sm-6">
+                                <label for="txtUser" class="form-label">Usuario</label>
+                                <input type="text" class="form-control" id="txtUser">
+                            </div>
+
+                            <!-- Campo para ingresar la contraseña -->
+                            <div class="col-sm-6">
+                                <label for="txtPassword" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="txtPassword" placeholder="Ingresa contraseña">
+                            </div>
+
+                            <!-- Dropdown para seleccionar el Rol -->
+                            <div class="col-sm-6">
+                                <label for="cborol" class="form-label">Rol</label>
+                                <select id="cborol" class="form-select" aria-label="Default select example">
+                                    <option selected>Selecciona el rol</option>
+                                    <option value="1">Administrador</option>
+                                    <option value="2">Vendedor</option>
+                                    <option value="3">otro</option>
+                                </select>
+                            </div>
+
+
+                            <!-- Dropdown para seleccionar el Estado -->
+                            <div class="col-sm-6">
+                                <label for="cboactivo" class="form-label">Estado</label>
+                                <select id="cboactivo" class="form-select " aria-label="Default select example">
+                                    <option value="1">Activo</option>
+                                    <option value="0">Inactivo</option>
+                                </select>
+                            </div>
+
+                            
+
+                            <!--  DNI -->
+                            <div class="col-sm-6">
+                                <label for="inputDNI" class="form-label">DNI de la Persona</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="inputDNI" placeholder="Ingrese DNI">
+                                    <button class="btn btn-primary" id="btnBuscarPersona">Buscar</button>
+                                </div>
+                            </div>
+
+                            <!--  persona encontrada -->
+                            <div class="col-sm-6">
+                                <label for="datosPersona" class="form-label">Nombres</label>
+                                <input type="text" class="form-control" id="datosPersona" placeholder="Sin selección" readonly>
+                            </div>
+
+
+                    
+
+
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-success">Guardar</button>
+                </div>
+
+            </div>
+    </div>
+</div>
+
+
+@section scripts {
+    <script>
+
+        var tabladata;
+
+   
+
+
+        tabladata = $("#tablaUsuarios").DataTable({
+            Responsive: true,
+            ordering: false,
+            "ajax": {
+                 url: '@Url.Action("ListarUsuarios", "Configuracion")', // Sin incluir parámetros en Url.Action
+                 type: "GET",
+                 data: { estado: true }, // Pasar parámetros aquí si es necesario
+                 dataType: "json"
+            },
+            "columns": [
+                { "data": "idUsuario" },
+                { "data": "nombreUsuario" },
+
+                { "data": "oPersona.nombreCompleto" },
+                { "data": "oPersona.email" },
+                { "data": "oRol.nombreRol" },
+                {
+                    "data": "estado",
+                    "render": function (data) {
+                        return data ? ` <button type="button" class="btn btn-success">Activo</button>` : ` <button type="button" class="btn btn-danger">Inactivo</button>`;
+                    }
+                },
+                {
+                    "defaultContent":
+                    `<button type="button" class="btn btn-primary btn-sm mx-2 btn-editar"><i class="fas fa-edit"></i></button>
+                     <button type="button" class="btn btn-danger btn-sm mx-2"><i class="fas fa-trash"></i></button>`,
+                    "orderable": false,
+                    "searchable": false,
+                    "width":"90px"
+                }
+
+            ],
+            "language": {
+                "url":"https://cdn.datatables.net/plug-ins/2.1.8/i18n/es-ES.json"
+            }
+        });
+
+
+        /*mostrar formularios*/ 
+        function abrirModal() {
+            $("#FormModal").modal("show");
+        }
+
+        /*Accion para botones*/
+        $("#tablaUsuarios tbody").on("click", '.btn-editar', function () {
+            var filaseleccionada= $(this).closest("tr")//para obtener la fila presionada
+            var data =tabladata.row(filaseleccionada).data();
+            
+        })
+    </script>
+}
