@@ -1,0 +1,11 @@
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaNegocio\obj\Debug\CapaNego.81B9D119.Up2Date
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\elvis\Desktop\Proyectos_General\Curso_Net_Framework_MVC\V_admin\CapaNegocio\obj\Debug\CapaNegocio.pdb
